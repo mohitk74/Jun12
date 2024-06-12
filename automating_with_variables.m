@@ -34,7 +34,7 @@ open_system(modelName);
 % Creating the test harness having source as 'From Workspace' and Sink 'Outport'
 % sltest.harness.delete(modelName,'Wiper_washer_final_Harnes')
    
-% sltest.harness.create(modelName, 'Name', 'Wiper_washer_final_Harnes', 'Source', 'From Workspace', 'Sink', 'Outport');
+sltest.harness.create(modelName, 'Name', 'Wiper_washer_final_Harnes', 'Source', 'From Workspace', 'Sink', 'Outport');
 
 % Opening the test Harness model
 sltest.harness.open(modelName,'Wiper_washer_final_Harnes');
