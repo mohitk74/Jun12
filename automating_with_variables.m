@@ -32,12 +32,12 @@ modelName='Sample_Model';
 open_system(modelName);
 
 % Creating the test harness having source as 'From Workspace' and Sink 'Outport'
-% sltest.harness.delete(modelName,'Sample_Model_Harnes3')
+% sltest.harness.delete(modelName,'Sample_Model_Harnes7')
    
-% sltest.harness.create(modelName, 'Name', 'Sample_Model_Harnes3', 'Source', 'From Workspace', 'Sink', 'Outport');
+sltest.harness.create(modelName, 'Name', 'Sample_Model_Harnes7', 'Source', 'From Workspace', 'Sink', 'Outport');
 
 % Opening the test Harness model
-sltest.harness.open(modelName,'Sample_Model_Harnes3');
+sltest.harness.open(modelName,'Sample_Model_Harnes7');
 %--------------------------------------------------------------------------
 % test Manager
 tf = sltest.testmanager.TestFile('Sample_Model_Results1.mldatx');
@@ -46,7 +46,7 @@ tc = getTestCases(ts);
 
 % To provide the Sample Model & Test Harness Model to the Test Manager
 setProperty(tc,'Model',modelName)
-setProperty(tc, 'HarnessName', 'Sample_Model_Harnes3', 'HarnessOwner', modelName);
+setProperty(tc, 'HarnessName', 'Sample_Model_Harnes7', 'HarnessOwner', modelName);
 
 % Capturing the Baseline
 baseline = captureBaselineCriteria(tc,'Sample_Model_Baseline.xlsx',true);
