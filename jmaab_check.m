@@ -1,4 +1,4 @@
-modelName = 'Wiper_washer_final.slx'; 
+modelName = 'Wiper_washer_final'; 
 load_system(modelName);  
 open_system(modelName);  
 
