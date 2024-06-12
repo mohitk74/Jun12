@@ -1,4 +1,4 @@
-data=readtable('m_u_l_.xlsx');
+data=readtable('Inputs.xlsx');
 time=seconds(data.Time);
 for i = 2:width(data)
     % Extract variable
