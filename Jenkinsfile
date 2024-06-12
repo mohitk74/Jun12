@@ -26,6 +26,7 @@ pipeline {
        //  }
        stage('Test') {
             steps {
+               runMATLABCommand(command: 'variables_for_jenkins')
                 runMATLABCommand(command: 'automating_with_variables')
             }       
         }
