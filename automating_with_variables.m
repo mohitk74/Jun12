@@ -32,12 +32,12 @@ modelName='Wiper_washer_final';
 open_system(modelName);
 
 % Creating the test harness having source as 'From Workspace' and Sink 'Outport'
-% sltest.harness.delete(modelName,'Wiper_washer_final_Harnes7')
+% sltest.harness.delete(modelName,'Wiper_washer_final_Harnes')
    
-sltest.harness.create(modelName, 'Name', 'Wiper_washer_final_Harnes7', 'Source', 'From Workspace', 'Sink', 'Outport');
+sltest.harness.create(modelName, 'Name', 'Wiper_washer_final_Harnes', 'Source', 'From Workspace', 'Sink', 'Outport');
 
 % Opening the test Harness model
-sltest.harness.open(modelName,'Wiper_washer_final_Harnes7');
+sltest.harness.open(modelName,'Wiper_washer_final_Harnes');
 %--------------------------------------------------------------------------
 % test Manager
 tf = sltest.testmanager.TestFile('Wiper_washer_final_Results1.mldatx');
@@ -46,7 +46,7 @@ tc = getTestCases(ts);
 
 % To provide the Sample Model & Test Harness Model to the Test Manager
 setProperty(tc,'Model',modelName)
-setProperty(tc, 'HarnessName', 'Wiper_washer_final_Harnes7', 'HarnessOwner', modelName);
+setProperty(tc, 'HarnessName', 'Wiper_washer_final_Harnes', 'HarnessOwner', modelName);
 
 % Capturing the Baseline
 % baseline = captureBaselineCriteria(tc,'Wiper_washer_final_Baseline.xlsx',true);
