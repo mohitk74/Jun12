@@ -1,4 +1,4 @@
-modelName = 'and_gate_model.slx';
+modelName = 'Wiper_washer_final.slx';
 sim(modelName);
 simOut = sim(modelName, 'ReturnWorkspaceOutputs', 'on');
 if ~isempty(simOut)
