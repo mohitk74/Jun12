@@ -1,4 +1,4 @@
-modelName = 'and_gate_model'; 
+modelName = 'Wiper_washer_final.slx'; 
 load_system(modelName);  
 open_system(modelName);  
 
