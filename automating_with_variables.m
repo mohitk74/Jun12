@@ -34,7 +34,7 @@ open_system(modelName);
 % Creating the test harness having source as 'From Workspace' and Sink 'Outport'
 % sltest.harness.delete(modelName,'Sample_Model_Harnes7')
    
-% sltest.harness.create(modelName, 'Name', 'Sample_Model_Harnes7', 'Source', 'From Workspace', 'Sink', 'Outport');
+sltest.harness.create(modelName, 'Name', 'Sample_Model_Harnes7', 'Source', 'From Workspace', 'Sink', 'Outport');
 
 % Opening the test Harness model
 sltest.harness.open(modelName,'Sample_Model_Harnes7');
