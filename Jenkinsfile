@@ -24,19 +24,19 @@ pipeline {
        //          runMATLABCommand(command: 'code_generation')
        //      }       
        //  }
-       // stage('Test_Harness') {
-       //      steps {
-       //          runMATLABCommand(command: 'test_Harness_Automation')
-       //      }       
-       //  }
-        stage('Testcases') {
+       stage('Test') {
             steps {
-                runMATLABTests(testResultsJUnit: 'test-results/results.xml',
-                               codeCoverageCobertura: 'code-coverage/coverage.xml', 
-                                 testResultsPDF: 'test-results/testreport.pdf')
-               // runMATLABCommand(command: 'test_and_gate_model')
-            }
+                runMATLABCommand(command: 'automating_with_variables')
+            }       
         }
+        // stage('Testcases') {
+        //     steps {
+        //         runMATLABTests(testResultsJUnit: 'test-results/results.xml',
+        //                        codeCoverageCobertura: 'code-coverage/coverage.xml', 
+        //                          testResultsPDF: 'test-results/testreport.pdf')
+        //        // runMATLABCommand(command: 'test_and_gate_model')
+        //     }
+        // }
       //  stage('Antim') {
       //       steps {
       //          runMATLABCommand(command: 'disp("Good Work Champ")')
