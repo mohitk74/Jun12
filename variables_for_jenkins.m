@@ -7,7 +7,7 @@ for i = 2:width(data)
     var = data{2:end,i};
     % Create timetable and load it to the workspace
     var_type = data{1,i};
-    var_type
+    % var_type
     if var_type == 197
         var = logical(var);
     else
