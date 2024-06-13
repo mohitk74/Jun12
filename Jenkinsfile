@@ -4,9 +4,9 @@ pipeline {
        PATH = "C:\\Program Files\\MATLAB\\R2023b\\bin;${PATH}"   // Windows agent 
    }
     stages {
-         stage('Pehla_Kadam') {
+         stage('First_Step') {
             steps {
-               runMATLABCommand(command: 'disp("Hello World!")')
+               runMATLABCommand(command: 'disp("The building has started!")')
             }       
         }
         stage('Simulation') {
@@ -38,9 +38,9 @@ pipeline {
         //        // runMATLABCommand(command: 'test_and_gate_model')
         //     }
         // }
-       stage('Antim') {
+       stage('Final_Step') {
             steps {
-               runMATLABCommand(command: 'disp("Good Work Champ")')
+               runMATLABCommand(command: 'disp("The building is finished!")')
             } 
       }
    }
