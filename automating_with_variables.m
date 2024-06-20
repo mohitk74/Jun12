@@ -1,29 +1,4 @@
 % clc;clear;close all;
-% 
-% % reading excel file
-% % disp("The First column of the Excel file Must be in")
-% data=readtable('m_u_l_.xlsx');
-% % Convert numeric time vector to duration
-% time = seconds(data.Time);
-% 
-% for i = 2:width(data)
-%     % Extract variable
-%     var = data{:,i};
-%     % Create timetable and load it to the workspace
-%     varName{i} = data.Properties.VariableNames{i};
-%     T = timetable(time,var);
-%     assignin('base',varName{i},T);
-% end
-% 3 represents column three
-% -------------------------------------------------------------------------
-% Converting time data in Seconds
-% time = seconds(time);
-% 
-% % Creating Timetable for the both variables & loading them to the workspace
-% % Note : Use the same Input variable name as given in the model
-% A = timetable(time,valA);
-% B = timetable(time,valB);
-%--------------------------------------------------------------------------
 
 load('acd.mat');
 
