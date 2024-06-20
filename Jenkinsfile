@@ -4,16 +4,16 @@ pipeline {
        PATH = "C:\\Program Files\\MATLAB\\R2023b\\bin;${PATH}"   // Windows agent 
    }
     stages {
-       //   stage('First_Step') {
-       //      steps {
-       //         runMATLABCommand(command: 'disp("The building has started!")')
-       //      }       
-       //  }
-       //  stage('Simulation') {
-       //      steps {
-       //          runMATLABCommand(command: 'simulation_check')
-       //      }       
-       //  }
+        //  stage('First_Step') {
+        //     steps {
+        //        runMATLABCommand(command: 'disp("The building has started!")')
+        //     }       
+        // }
+        stage('Simulation') {
+            steps {
+                runMATLABCommand(command: 'simulation_check')
+            }       
+        }
        // stage('Jmaab_check') {
        //      steps {
        //          runMATLABCommand(command: 'jmaab_check')
